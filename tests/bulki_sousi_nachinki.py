@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
@@ -18,18 +20,24 @@ assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
 
 driver.find_element(By.XPATH, ".//div[@style='display: flex;']//span[text()='Начинки']").click()
 
+WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((By.XPATH, "./html/body/div/div/main/section[1]/div[2]/h2[3]")))
+time.sleep(2)
 element = driver.find_element(By.XPATH, "./html/body/div/div/main/section[1]/div[2]/h2[3]")
 
 assert 'Начинки' in element.text
 
 driver.find_element(By.XPATH, ".//div[@style='display: flex;']//span[text()='Соусы']").click()
 
+WebDriverWait(driver, 3)
+time.sleep(2)
 element = driver.find_element(By.XPATH, "./html/body/div/div/main/section[1]/div[2]/h2[2]")
 
 assert 'Соусы' in element.text
 
 driver.find_element(By.XPATH, ".//div[@style='display: flex;']//span[text()='Булки']").click()
 
+WebDriverWait(driver, 3)
+time.sleep(2)
 element = driver.find_element(By.XPATH, "./html/body/div/div/main/section[1]/div[2]/h2[1]")
 
 assert 'Булки' in element.text
