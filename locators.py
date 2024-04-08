@@ -24,9 +24,9 @@ class Locators:
     KNOPKA_STELLAR_BURGERS = (By.XPATH, ".//div[@class='AppHeader_header__logo__2D0X2']")  # Кнопка Stellar Burgers
     KNOPKA_EXIT = (By.XPATH, ".//ul[@class='Account_list__3KQQf mb-20']//button[text()='Выход']") # Кнопка Выход из личного кабинета
     NACHINKI = (By.XPATH, ".//span[text()='Начинки']") # Таб Начинки
-    EL_TWO = (By.XPATH, ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']") # Новый класс при нажатии таба
-    NACHINKI_EL_ONE = (By.XPATH, ".//span[text()='Начинки']/parent::div") # Начинки первый элемент
+    ELEMENT_TWO = (By.XPATH, ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']") # Новый класс при нажатии таба
+    NACHINKI_ELEMENT_ONE = (By.XPATH, ".//span[text()='Начинки']/parent::div") # Начинки первый элемент
     SOUSI = (By.XPATH, ".//span[text()='Соусы']")  # Таб Соусы
-    SOUSI_EL_ONE = (By.XPATH, ".//span[text()='Соусы']/parent::div")  # Соусы первый элемент
+    SOUSI_ELEMENT_ONE = (By.XPATH, ".//span[text()='Соусы']/parent::div")  # Соусы первый элемент
     BULKI = (By.XPATH, ".//span[text()='Булки']")  # Таб Булки
-    BULKI_EL_ONE = (By.XPATH, ".//span[text()='Булки']/parent::div")  # Булки первый элемент
+    BULKI_ELEMENT_ONE = (By.XPATH, ".//span[text()='Булки']/parent::div")  # Булки первый элемент

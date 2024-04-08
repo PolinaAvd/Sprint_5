@@ -26,4 +26,6 @@ test_vihod_iz_lichn_kab_successful_exit - успешный выход из ЛК
 
 Переходы булки - соусы - начинки:
 bulki_sousi_nachinki.py 
-test_tabs_na_glavnoj_stranice_successful_tabbing - поверка нажатия табов 
+test_tabs_na_glavnoj_stranice_nachinki_successful_tabbing - поверка нажатия табов Начинки
+test_tabs_na_glavnoj_stranice_sousi_successful_tabbing - поверка нажатия табов Соусы
+test_tabs_na_glavnoj_stranice_bulki_successful_tabbing - поверка нажатия табов Булки
